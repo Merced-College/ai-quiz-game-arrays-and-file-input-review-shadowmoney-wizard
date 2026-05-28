@@ -1,13 +1,16 @@
 Question,CorrectAnswer,Choice2,Choice3,Choice4
-What does AI stand for?,Artificial Intelligence,Automatic Internet,Advanced Input,Apple Interface
-Which type of AI learns from data?,Machine Learning,Typing,Printing,Copying
-What is a chatbot?,A program that responds to user messages,A computer mouse,A spreadsheet formula,A video game controller
-What is machine learning?,A way computers learn patterns from data,A way to fix a printer,A type of monitor,A programming error
-What is training data?,Examples used to teach an AI system,A finished video game,A keyboard shortcut,A computer virus
-What does bias in AI mean?,When AI results are unfair or favor one group,When a program runs quickly,When a computer has more memory,When a file is too large
-What is an algorithm?,A step-by-step process to solve a problem,A type of screen,A hardware cable,A password
-What is generative AI?,AI that can create new content,AI that only deletes files,AI that turns off computers,AI that formats hard drives
-Which is an example of AI?,Voice assistant,Wooden pencil,Notebook paper,Desk chair
-Why is it important to test AI systems?,To make sure they work correctly and fairly,To make the computer heavier,To delete the data,To avoid using code
-What year did Artificial Intelligence begin?,1956,1984,1966,2022
-Which one is it?,1,1,1,1
+What does AI stand for?,Artificial Intelligence,Automatic Internet,Advanced Input,Apple Interface,Application Interface
+Which type of AI learns from data?,Machine Learning,Typing,Printing,Copying,Scanning
+What is a chatbot?,A program that responds to user messages,A computer mouse,A spreadsheet formula,A video game controller,A console
+What is machine learning?,A way computers learn patterns from data,A way to fix a printer,A type of monitor,A programming error,A web interface
+What is training data?,Examples used to teach an AI system,A finished video game,A keyboard shortcut,A computer virus,A virtual workout
+What does bias in AI mean?,When AI results are unfair or favour one group,When a program runs quickly,When a computer has more memory,When a file is too large,When it rejects a user's input
+What is an algorithm?,A step-by-step process to solve a problem,A type of screen,A hardware cable,A password,A recipe
+What is generative AI?,AI that can create new content,AI that only deletes files,AI that turns off computers,AI that formats hard drives,AI that generates income
+Which is an example of AI?,Voice assistant,Wooden pencil,Notebook paper,Desk chair,Mobile device
+Why is it important to test AI systems?,To make sure they work correctly and fairly,To make the computer heavier,To delete the data,To avoid using code,To solve all your problems
+What year did artificial intelligence begin?,1956,1984,1966,2022,1993
+Which one is it?,1,1,1,1,1
+What country invented the first artificial intelligence?,United States,United Kingdom,Canada,China,Japan
+Can a current-day AI pass the Turing Test?,Yes,No,Maybe,Maybe No,I have no idea
+What is the name of the world's first chatbot?,ELIZA,A.L.I.C.E,Siri,ChatGPT,OpenAI

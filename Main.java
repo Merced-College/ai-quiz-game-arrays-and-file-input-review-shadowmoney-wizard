@@ -1,7 +1,8 @@
 //Andre Aguilar
 //25.05.2026
-//AI Quiz Game: program reads questions from a .csv file
-//& asks user to input their answer by typing a number between 1-4.
+//AI Quiz Game: program reads 15 questions from a .csv file,
+//randomises order of Qs & As,
+//asks user to input their answer by typing a number between 1-5,
 //displays if answer is wrong or right & shows total correct answers at the end
 
 import java.io.File;
@@ -12,10 +13,11 @@ import java.util.Scanner;
 public class Main {
 
     //this line has the program know that there will be a total of 12 questions
-    //ENHANCEMENT 1: added two more questions
-    public static final int NUMBER_OF_QUESTIONS = 12;
+    //ENHANCEMENT 1: added five more questions
+    public static final int NUMBER_OF_QUESTIONS = 15;
     //this line has the program know that there will be a total of 4 choices to pick from for each question
-    public static final int NUMBER_OF_CHOICES = 4;
+    //ENHANCEMENT 2: added 1 more choice
+    public static final int NUMBER_OF_CHOICES = 5;
 
     public static void main(String[] args) {
         String[] questions = new String[NUMBER_OF_QUESTIONS]; //stores questions one by one, extracted from each row in the .csv
@@ -25,7 +27,7 @@ public class Main {
         //this line allows the program to obtain the questions & answers
         readQuizFile(questions, answers, correctAnswers);
 
-        //ENHANCEMENT 2: randomises question order
+        //ENHANCEMENT 3: randomises question order
         shuffleQuiz(questions, answers, correctAnswers);
 
         //this scanner allows the user to input their answers
@@ -64,6 +66,16 @@ public class Main {
         //once all questions are answered, the program will notify its completion & present the user with their final score
         System.out.println("Quiz complete!");
         System.out.println("Your final score is: " + score + " out of " + questions.length);
+        //ENHANCEMENT 4
+        if (score < 8) {
+            System.out.println(":(");
+                } else if (score == 15) {
+            System.out.println("perfect score! wahoo! oh yes! congratulations! :)");
+                } else if (score >= 8) {
+            System.out.println(":)");
+        }
+
+        
 
         //once all questions have been displayed & answered, & the final score has been shown,
         //the input box will close, unable to type inside the input
@@ -95,10 +107,9 @@ public class Main {
                     answers[index][i] = data[i + 1];
                 }
 
-                // Assuming the correct answer is always the first choice (index 0)
-                // You can modify this if your CSV contains the correct answer index explicitly
                 correctAnswers[index] = 0;
 
+                //ENHANCEMENT 5: randomises order of answer choices
                 shuffleAnswers(answers[index], correctAnswers, index);
                 index++;
             }
@@ -111,7 +122,7 @@ public class Main {
         }
     }
 
-    //the snippet behind enhancement 2
+    //the snippet behind enhancement 3
     //meaty stuff of line 29 being able to randomise the order of questions being asked
     public static void shuffleQuiz(String[] questions, String[][] answers, int[] correctAnswers) {
         Random rand = new Random();
@@ -135,7 +146,7 @@ public class Main {
         }
     }
 
-    //ENHANCEMENT 3
+    //stuff behing enhancement 5
     //this snippet has the answer choices be in a randomised order so the first choice is not always the correct one
     public static void shuffleAnswers(String[] answerChoices, int[] correctAnswers, int questionIndex) {
     Random rand = new Random();
